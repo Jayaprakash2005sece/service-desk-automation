@@ -1,10 +1,10 @@
-🚀 Service Desk Automation (O365 + ITSM)
+ Service Desk Automation (O365 + ITSM)
 
 A backend automation system that simulates how IT service desk tickets can be automatically created, classified, prioritized, assigned, and tracked using rule-based logic and REST APIs.
 
 This project demonstrates real-world automation thinking rather than UI-heavy implementation.
 
-📌 Problem Statement
+ Problem Statement
 
 Traditional service desks rely on manual ticket creation, which leads to:
 
@@ -16,7 +16,7 @@ SLA breaches
 
 Reduced employee productivity
 
-🎯 Solution Overview
+Solution Overview
 
 This project automates the end-to-end service desk workflow:
 
@@ -32,7 +32,7 @@ Users are notified instantly
 
 External systems like O365 and ITSM tools are simulated to keep the solution lightweight and interview-focused.
 
-🧠 Key Features
+ Key Features
 
 ✅ Rule-based ticket classification
 
@@ -46,7 +46,7 @@ External systems like O365 and ITSM tools are simulated to keep the solution lig
 
 ✅ Easy to extend and scale
 
-🏗️ System Architecture
+  System Architecture
 User (Outlook / Teams)
         ↓
 Automation Service (Flask API)
@@ -57,7 +57,7 @@ ITSM Tool (Mocked)
         ↓
 In-Memory Database
 
-🔄 Automation Flow
+  Automation Flow
 
 User raises an issue via O365
 
