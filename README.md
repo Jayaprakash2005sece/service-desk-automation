@@ -1,29 +1,84 @@
-# Service Desk Automation (O365 + ITSM)
+🚀 Service Desk Automation (O365 + ITSM)
 
-This project demonstrates a backend automation service that simulates how
-issues raised via O365 (Outlook/Teams) can be automatically processed and
-converted into ITSM tickets.
+A backend automation system that simulates how IT service desk tickets can be automatically created, classified, prioritized, assigned, and tracked using rule-based logic and REST APIs.
 
-## Features
-- Rule-based ticket classification
-- Automatic priority & SLA assignment
-- Auto-routing to support teams
-- REST API based design
+This project demonstrates real-world automation thinking rather than UI-heavy implementation.
 
-## Sample API
+📌 Problem Statement
 
-POST /api/tickets
+Traditional service desks rely on manual ticket creation, which leads to:
 
-Request:
-{
-  "subject": "VPN not working",
-  "description": "Unable to connect to VPN"
-}
+Delayed ticket registration
 
-Response:
-{
-  "category": "INCIDENT",
-  "priority": "HIGH",
-  "assigned_team": "Network Team",
-  "sla_hours": 4
-}
+Incorrect team assignment
+
+SLA breaches
+
+Reduced employee productivity
+
+🎯 Solution Overview
+
+This project automates the end-to-end service desk workflow:
+
+Issues raised via O365 (Outlook / Teams) are processed automatically
+
+Tickets are classified as Incident or Service Request
+
+Priority and SLA are assigned
+
+Tickets are routed to the correct support team
+
+Users are notified instantly
+
+External systems like O365 and ITSM tools are simulated to keep the solution lightweight and interview-focused.
+
+🧠 Key Features
+
+✅ Rule-based ticket classification
+
+✅ Automatic priority & SLA assignment
+
+✅ Keyword-based team routing
+
+✅ REST API–driven backend
+
+✅ Clean layered architecture
+
+✅ Easy to extend and scale
+
+🏗️ System Architecture
+User (Outlook / Teams)
+        ↓
+Automation Service (Flask API)
+        ↓
+Rule Engine (Classification, SLA, Assignment)
+        ↓
+ITSM Tool (Mocked)
+        ↓
+In-Memory Database
+
+🔄 Automation Flow
+
+User raises an issue via O365
+
+Automation service receives the request
+
+Issue details are extracted
+
+Ticket is classified (Incident / Request)
+
+Priority and SLA are assigned
+
+Ticket is routed to the support team
+
+Ticket is created and tracked
+
+🛠️ Tech Stack
+
+Backend: Python (Flask)
+
+API Style: REST
+
+Data Storage: In-memory (can be extended to SQLite/MySQL)
+
+Tools: Postman, GitHub
