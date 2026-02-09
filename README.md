@@ -40,13 +40,13 @@ External systems like O365 and ITSM tools are simulated to keep the solution lig
 ## **System Architecture**
 
 **User (Outlook / Teams)**  
-↓  
+            ↓  
 **Automation Service (Flask API)**  
-↓  
+            ↓  
 **Rule Engine (Classification, SLA, Assignment)**  
-↓  
+            ↓  
 **ITSM Tool (Mocked)**  
-↓  
+            ↓  
 **In-Memory Database**
 
 
