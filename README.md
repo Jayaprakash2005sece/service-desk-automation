@@ -1,12 +1,13 @@
- Service Desk Automation (O365 + ITSM)
+Service Desk Automation (O365 + ITSM)
+Project Overview
 
-A backend automation system that simulates how IT service desk tickets can be automatically created, classified, prioritized, assigned, and tracked using rule-based logic and REST APIs.
+This project implements a backend automation system that simulates how IT service desk tickets can be automatically created, classified, prioritized, assigned, and tracked using rule-based logic and REST APIs.
 
-This project demonstrates real-world automation thinking rather than UI-heavy implementation.
+The solution focuses on real-world automation design rather than UI-heavy implementation, demonstrating strong backend engineering and workflow automation concepts.
 
- Problem Statement
+Problem Statement
 
-Traditional service desks rely on manual ticket creation, which leads to:
+Traditional service desks rely on manual ticket creation and handling, which leads to:
 
 Delayed ticket registration
 
@@ -16,48 +17,51 @@ SLA breaches
 
 Reduced employee productivity
 
+Lack of centralized tracking and visibility
+
 Solution Overview
 
-This project automates the end-to-end service desk workflow:
+This project automates the complete IT service desk workflow:
 
 Issues raised via O365 (Outlook / Teams) are processed automatically
 
 Tickets are classified as Incident or Service Request
 
-Priority and SLA are assigned
+Priority and SLA are assigned dynamically
 
-Tickets are routed to the correct support team
+Tickets are routed to the appropriate support team
 
 Users are notified instantly
 
-External systems like O365 and ITSM tools are simulated to keep the solution lightweight and interview-focused.
+External systems such as O365 and ITSM tools are simulated for lightweight execution
 
- Key Features
+Key Features
 
-✅ Rule-based ticket classification
+Rule-based ticket classification
 
-✅ Automatic priority & SLA assignment
+Automatic priority and SLA assignment
 
-✅ Keyword-based team routing
+Keyword-based team routing
 
-✅ REST API–driven backend
+REST API–driven backend
 
-✅ Clean layered architecture
+Clean layered architecture
 
-✅ Easy to extend and scale
+Easily extendable and scalable design
 
-  System Architecture
+System Architecture
+
 User (Outlook / Teams)
-        ↓
+↓
 Automation Service (Flask API)
-        ↓
+↓
 Rule Engine (Classification, SLA, Assignment)
-        ↓
-ITSM Tool (Mocked)
-        ↓
+↓
+Mock ITSM Tool
+↓
 In-Memory Database
 
-  Automation Flow
+Automation Flow
 
 User raises an issue via O365
 
@@ -65,20 +69,19 @@ Automation service receives the request
 
 Issue details are extracted
 
-Ticket is classified (Incident / Request)
+Ticket is classified as Incident or Service Request
 
 Priority and SLA are assigned
 
-Ticket is routed to the support team
+Ticket is routed to the correct support team
 
 Ticket is created and tracked
 
-🛠️ Tech Stack
+User is notified
+
+Technology Stack
 
 Backend: Python (Flask)
-
 API Style: REST
-
-Data Storage: In-memory (can be extended to SQLite/MySQL)
-
+Data Storage: In-memory (extendable to SQLite or MySQL)
 Tools: Postman, GitHub
